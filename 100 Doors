@@ -18,11 +18,11 @@ optimization that may also be expressed
 public class OneHundredDoors{
 	
 	public static void main(String[] args){
-		boolean[] toggle = new boolean[101]; // true=open , false=closed
+		boolean[] toggle=new boolean[101]; // true=open , false=closed
 		for(int step=1;step<100;step++){
 			for(int i=0;i<=100;i+=step){
 				toggle[i]=!toggle[i];}}
-		System.out.println("Open doors:");
+		System.out.println("Opened doors:");
 		for(int k=1;k<toggle.length;k++){
 			if(toggle[k]){
 				System.out.print(k + " ");}}
